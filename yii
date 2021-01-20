@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Yii console bootstrap file.
+ *
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2008 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ */
+$console = require_once(__DIR__ . '/config/console.php');
+$local = include(__DIR__ . '/config/local.php');
+if (empty($local)) {
+    die('config/local.php not found');
+}
+
+require(__DIR__ . '/vendor/autoload.php');
+require(__DIR__ . '/vendor/yiisoft/yii2/Yii.php');
+
+$config = yii\helpers\ArrayHelper::merge(
+    $console,
+    $local
+);
+//if (isset($config['components']['request'])) unset($config['components']['request']);
+if (isset($config['components']['user'])) unset($config['components']['user']);
+if (isset($config['components']['session'])) unset($config['components']['session']);
+
+$application = new yii\console\Application($config);
+$exitCode = $application->run();
+exit($exitCode);

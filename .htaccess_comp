@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php71” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddType application/x-httpd-ea-php71 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+RewriteCond %{HTTP_HOST} ^\*\.competitorfeed\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.\*\.competitorfeed\.com$
+RewriteRule ^/?$ "http\:\/\/\*\.competitorfeed\.com\/\^\/process\-embedded\.php" [R=301,L]
+
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#RewriteCond %{HTTP_HOST} ^www\.competitorfeed\.com$
+#RewriteRule ^(.*)$ http://competitorfeed.com/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+

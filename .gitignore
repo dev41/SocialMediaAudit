@@ -1,0 +1,71 @@
+
+# phpstorm project files
+#Add ignored files by default
+#except itself
+!.gitignore
+
+events.txt
+
+#archives and log
+*.log
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+review.sql
+wp.sql
+
+
+*_DEV.php
+*_DEV
+*_old*
+*.old*
+*.bak*
+_wildcard_*
+
+#.htaccess
+.htaccess_DEV
+.htaccess_old
+error_log
+cgi-bin/*
+
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# node modules dir
+/node_modules
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+phpunit.xml
+
+
+tests/_output/*
+tests/_support/_generated
+# phpstorm
+.idea
+.well-known

@@ -1,0 +1,299 @@
+body {
+	background: white !important;
+	font-size: 22px !important;
+	padding-bottom: 0 !important;
+	padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.faq-box .question, .panel-title {
+	font-size: 24px !important;
+}
+.company-details p {
+	font-size: 20px !important;
+}
+.opport-box .member-info h4 {
+	font-size: 24px !important;
+	line-height: 28px !important;
+}
+.btn {
+	font-size: 22px !important;
+}
+.score_name {
+	letter-spacing: 0;
+	font-size: 18px !important;
+	font-weight: normal !important;
+}
+.section-title {
+	font-size: 34px !important;
+}
+.cloud-container .grade-1 {
+	font-size: 16px !important;
+}
+.cloud-container .grade-2 {
+	font-size: 18px !important;
+}
+.cloud-container .grade-3 {
+	font-size: 26px !important;
+}
+.cloud-container .grade-4 {
+	font-size: 30px !important;
+}
+.cloud-container .grade-5 {
+	font-size: 34px !important;
+}
+
+.site_logo {
+	height: 51px !important;
+	width: 195px !important;
+}
+.site_logo.agency-logo {
+	height: 120px !important;
+	width: 312px !important;
+}
+
+/* removing all rounded corners to improve performance
+div, .btn, .label {
+	border-radius: initial !important;
+}
+
+/* correcting header positioning and hiding menus and buttons */
+#topnav {
+	position: absolute;
+	margin-right: -500px;	/* no idea why but without this header flies away to the left A LOT */
+}
+
+#embed-btn, #pdf-btn,
+.btn-shared_link, .btn-refresh-results, .bg--twitter, .bg--facebook
+{
+	display: none !important;
+}
+.--left-buttons, .--right-buttons {
+	display: none !important;
+}
+
+.audit-result-buttons {
+	 margin-top: 0 !important;
+}
+
+.btn-improve-recommendations {
+	width: 300px !important;
+}
+.btn--icon i.socicon {
+	line-height: 60px !important;
+}
+.btn--icon {
+	padding-left: 3.5em !important;
+}
+.radial__labelllll {
+	z-index: 999 !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	margin-bottom: 0;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity .3s ease;
+	display: block;
+}
+.radial__label{
+	z-index: 999;
+}
+.h3 {
+	font-size: 32px !important;
+}
+.h4 {
+	font-size: 18px !important;
+}
+#topnav .navbar-custom, .banner, .button_panel, .menu-extras, .btn-do-it-for-me, .btn-do-it-for-me-container, .our-free-tool, .container.progress, .result_banner {
+	display: none !important;
+}
+.wrapper {
+	margin-top: 70px !important;
+}
+.recommendation-btn-block {
+	width: 100% !important;
+}
+
+ /*this is necessary for charts and diagrams to render correctly*/
+.results-radar-container {
+	width: 262px;
+	height: 240px;
+}
+#bar-headers, #bar-keywords {
+	width: 474px;
+	height: 347px;
+}
+
+.audit-result-buttons .--right-buttons {
+	 float: none !important;
+	 width: 100% !important;
+}
+
+/* hiding "share report" block */
+.share-report-container {
+	display: none;
+}
+
+.boxed.boxed--lg {
+	 padding: 1.85714286em !important;
+}
+.block-time form {
+	width: 500px !important;
+}
+.boxed.boxed--border {
+	border: 1px solid #c5c3c3 !important;
+}
+/* pre-expanding all expandables and hiding expand/collapse buttons */
+.expand-task, .collapse-task, .js-collapse-in, .js-collapse-out {
+	display: none !important;
+}
+.js-collapse-target{
+	display:block!important;
+}
+
+.btn-show-headers, .btn-show-keywords, .btn-show-images, .btn-show-seo, .btn-hide-seo, .btn-show-performance, .btn-hide-performance, .btn-show-uimobile, .btn-hide-uimobile {
+	display: none !important;
+}
+.answer.headers,
+.answer.keywords,
+.answer.images,
+.hidden-result.seo,
+.hidden-result.performance,
+.hidden-result.uimobile,
+.pdf-render-show
+{
+	display: block !important;
+}
+.answer.headers #headings li {
+	display: list-item !important;
+}
+.field-on-page-links .answer .task-list tr {
+	display: table-row !important;
+}
+
+/* hiding horizontal scroll bars */
+.table-responsive {
+	overflow-x: hidden !important;
+}
+
+/* hide recommendations toggles */
+.recommendations-toggles {
+	display: none;
+}
+
+/*!* improving pagebreaking *!*/
+/*.field-page-size-info, .field-rendering, #seo, #performance, #uimobile, #social, #security, #technology, .tab-recommendations, .table-part {*/
+	/*page-break-inside: avoid !important;*/
+/*}*/
+/*.portlet-heading, .panel-heading {*/
+	/*page-break-after: avoid !important;*/
+/*}*/
+/*.portlet-body, .panel-body {*/
+	/*page-break-before: avoid !important;*/
+/*}*/
+/*.avoid-break-after{*/
+	/*page-break-after: avoid !important;*/
+/*}*/
+/*.avoid-break-inside{*/
+	/*page-break-inside: avoid;*/
+/*}*/
+
+/*.avoid-break-before{*/
+	/*page-break-before: avoid !important;*/
+/*}*/
+
+.report-explanation {
+	display: block !important;
+	margin-bottom: 50px !important;
+}
+.report-explanation h1 {
+	font-size: 54px !important;
+	margin-left: 35px !important;
+	margin-bottom: 50px !important;
+	line-height: 60px !important;
+}
+.report-explanation p {
+	font-size: 22px !important;
+	margin-left: 25px !important;
+}
+.pdf-half {
+	width: 542px !important;
+}
+.pdf-third {
+	width: 361px !important;
+}
+
+.recommendation-item .member-info{
+	margin-left: 30px;
+}
+.tab-recommendations {
+	background-color: #ffffff !important;
+}
+.js-recommendation-container .btn {
+	display: none !important;
+}
+.field-hasFriendlyUrl table {
+	margin-top: 27px;
+}
+.field-hasFriendlyUrl table thead th:nth-child(n+3){
+	position: relative;
+    width: 6%;
+    height: 150px;
+}
+
+.field-hasFriendlyUrl table thead th:nth-child(n+3) div{
+	transform: rotate(-60deg) ;
+	-webkit-transform: rotate(-60deg) ;
+	-moz-transform: rotate(-60deg) ;
+	-o-transform: rotate(-60deg) ;
+	-ms-transform: rotate(-60deg) ;
+    padding: 0;
+    position: absolute;
+    bottom: 60%;
+    height: 40px;
+    width: 150px;
+    vertical-align: bottom;
+    text-align: left;
+    left: -30%;
+}
+
+.field-hasFriendlyUrl table tbody td:nth-child(n+3){
+	text-align: center;
+}
+
+.agency-logo{
+	z-index:100;
+	position: relative;
+}
+
+h4{
+    font-size: 26px!important;
+}
+
+.recommendation-title{
+    line-height: 1.5em;
+}
+
+.activity-item {
+	width: 140px !important;
+}
+.js-ajax-alert .alert{
+    margin-top: 48px!important;
+    padding-right: 15px!important;
+	display: block!important;
+    line-height: 1.5em;
+    font-size: 24px !important;
+}
+.js-ajax-alert .alert .close{
+    display: none;
+}
+
+#results, #facebook, #twitter, #googlePlus,
+#youtube, #instagram, #linkedin, #shares, #recommendation {
+	page-break-inside: avoid !important;
+}
+
+h2 {
+	font-size: 1.8em !important;
+}

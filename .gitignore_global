@@ -1,0 +1,44 @@
+#Add ignored files by default
+#except itself
+!.gitignore_global
+
+#archives and log
+*.log
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+.htaccess
+error_log
+cgi-bin/*
+upload/*
+
+website_review/runtime/pdf_reports/*
+!website_review/runtime/pdf_reports/.gitignore
+
+website_review/runtime/cache/*
+!website_review/runtime/cache/.gitignore
+
+website_review/runtime/*
+!website_review/runtime/.gitignore
+
+#ignore main config use main_DEV instead
+website_review/config/main.php
+website_review/views/site/pretest.php
+
+inc/shorturldatabase.php
+www/inc/short_url_database.php
+inc/settings.php
+adminer.php
+
+#wordpress
+
+wp-config.php
+wp-content/plugins/hello.php
+wp-content/wc-logs/*
+wp-content/wflogs/*

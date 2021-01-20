@@ -1,0 +1,13 @@
+Run console commands inside website root directory
+- Changing document root as root user:
+    nano /var/cpanel/userdata/USERNAME/DOMAIN.COM or DOMAIN.COM_SSL
+    Modify this line documentroot: /home/USERNAME/public_html/www and save
+    /scripts/rebuildhttpdconf
+    service httpd restart
+- Do previous step with all subdomains (*.DOMAIN.COM)
+- if you don't have composer run these commands:
+    curl -sS https://getcomposer.org/installer | php
+    mv composer.phar /usr/local/bin/composer
+    composer global require "fxp/composer-asset-plugin:^1.3.1"
+- composer update
+- ./yii migrate
